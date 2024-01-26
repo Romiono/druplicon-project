@@ -1,0 +1,33 @@
+.wrapper {
+    border-left: solid #F14D34 3px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin: 10px;
+    height: 120px;
+}
+
+.title {
+    text-align: start;
+    font-weight: bold;
+    margin: 0;
+    font-size: 24px;
+}
+
+.tB {
+    line-height: 20px;
+    font-size: 14px;
+    color: darkgray;
+}
+
+.bigTitle {
+    font-size: 52px;
+    font-weight: bold;
+}
+
+.header {
+    display: flex;
+    align-items: start;
+}

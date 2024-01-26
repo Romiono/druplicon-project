@@ -1,0 +1,61 @@
+
+button {
+    width: 220px;
+    height: 60px;
+    background-color: transparent;
+    border: 3px #F14D34 solid;
+    border-radius: 5px;
+    color: #000000;
+    transition: 0.25s ease;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.titles {
+    border-bottom: solid 2px darkgray;
+}
+
+.titlePacks, .time, .price {
+    text-align: start;
+    margin: 0;
+    padding: 0;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 70px;
+}
+
+.titlePacks{
+    font-weight: bold;
+    color: #F14D34;
+}
+
+.wrapper
+{
+    border: 1px #999999 solid;;
+    border-radius: 5px;
+    width: 390px;
+    margin: 10px;
+    box-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    transition: 0.5s ease;
+    background-color: #fff;
+}
+
+.wrapper:hover {
+    scale: 1.1;
+    button {
+        color: #fff;
+        background-color: #F14D34;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .wrapper {
+        width: 95%;
+    }
+}

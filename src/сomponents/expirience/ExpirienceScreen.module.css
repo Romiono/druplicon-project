@@ -1,0 +1,53 @@
+.text {
+    font-size: 12px;
+}
+
+.laptop {
+    position: absolute;
+    left: 0;
+    top: -75px;
+    width: 700px;
+}
+
+.imgWrapper {
+    position: relative;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.wrapper:before {
+    z-index: -10;
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    content: url("../../ref/header/druplicon.svg");
+    background-color: black;
+    left: 0;
+    bottom: -200px;
+    overflow: hidden;
+}
+
+.title {
+    color: #f5f5f5;
+    font-size: 52px;
+    font-weight: bold;
+
+}
+
+@media screen and (max-width: 750px) {
+    .laptop {
+        position: relative;
+    }
+
+    .wrapper {
+        background-color: black;
+        padding: 50px 0;
+    }
+
+    .wrapper:before {
+        content: '';
+    }
+
+}

@@ -1,0 +1,53 @@
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.titleIn {
+    font-size: 52px;
+    font-weight: bold;
+
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+
+}
+
+.inText {
+    text-align: center;
+}
+
+.priceLink {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.wrapper {
+    padding-top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative ;
+    overflow: hidden;
+}
+
+.bg {
+    height: 92%;
+    position: absolute;
+    right: -550px;
+    z-index: -5;
+}
+
+@media screen and (max-width: 720px){
+    .wrapper {
+        padding-top: 50px;
+    }
+
+    .bg {
+        height: 105%;
+        right: -1400px;
+    }
+}

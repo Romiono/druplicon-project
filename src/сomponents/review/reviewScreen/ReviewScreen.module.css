@@ -1,0 +1,26 @@
+.slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    font-weight: bold;
+    user-select: none;
+    line-height: 20px;
+}
+
+.img {
+    position: relative;
+    width: 78px;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 720px){
+    .slide {
+        width: 300px;
+    }
+
+    .text {
+        width: 300px;
+    }
+}

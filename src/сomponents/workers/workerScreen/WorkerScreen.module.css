@@ -1,0 +1,14 @@
+.wrapperBtn {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    font-size: 52px;
+    font-weight: bold;
+}
+
+.wrapperTitle {
+    display: flex;
+    justify-content: center;
+}

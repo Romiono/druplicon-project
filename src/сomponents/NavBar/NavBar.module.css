@@ -1,0 +1,384 @@
+.Main{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 5%;
+    margin-bottom: 110px;
+}
+
+@media screen and (max-width: 720px) {
+    .Main{
+        padding-top: 30px;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        padding-left: 3%;
+        position: fixed;
+        bottom: 0;
+        background-color: #262626;
+        border-top:1px solid black ;
+        z-index: 10;
+        margin-bottom: 0;
+    }
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+}
+.Number {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    white-space: nowrap;
+    padding-right: 20px;
+}
+
+.containerItemMain{
+    display: flex;
+    align-items: center;
+}
+.containerItemMain img{
+    padding-right: 50px;
+}
+.containerItemMain2{
+     margin-right: 5%;
+     display: flex;
+     align-items: center;
+ }
+.containerItem {
+    opacity: 0.8;
+    color: #FFF;
+    font-family: Ubuntu;
+    font-size: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+    padding-right: 30px;
+}
+.link {
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    transition: 0.5s;
+    color: #FFF;
+    font-family: Ubuntu;
+    font-weight: 500;
+    text-align: center;
+}
+.subMenu {
+    position: absolute;
+    background-color: #f04d35;
+    z-index: 2
+}
+.subMenuEnter {
+    animation: fadeIn 0.8s ease-in;
+    pointer-events: auto;
+}
+.subMenuExit {
+    animation: fadeOut 0.8s ease-out;
+    pointer-events: none;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+.subItem{
+    display: block;
+    width: 100%;
+    padding: 5px 10px 3px 10px;
+    transition: background-color 0.3s
+}
+.subItem:hover {
+    background-color: #d13018;
+    width: 100%;
+}
+/*a::after, a.active::after{*/
+/*    content: "";*/
+/*    top: calc(100% + 5px);*/
+/*    width: 100%;*/
+/*    transform: scaleX(0);*/
+/*    height: 2px;*/
+/*    background-color: #F14D35;*/
+/*    transition: transform 0.4s;*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*}*/
+a:not(.active):hover::after, a.active::after {
+    transform: scaleX(1);
+}
+a.withOptions:hover::after,
+a.withOptions.active::after {
+    transform: scaleX(0);
+}
+
+a {
+    color: #f5f5f5;
+    font-size: 14px;
+}
+
+.rotate, .AgainRotate {
+    transition: transform 0.5s;
+}
+
+.rotate {
+    margin-left: 5px;
+    transform: translateX(2px) rotate(-180deg);
+}
+
+.AgainRotate {
+    transform: rotate(0deg);
+}
+
+.dropdownMenu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 17px;
+    position: absolute;
+    min-width: 50px;
+    z-index: 3;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+
+}
+.dropdownMenu li {
+    position: relative;
+    padding-top: 10px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.show li {
+    opacity: 1;
+}
+.dropdownMenu li::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #F14D35;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.dropdownMenu li:hover::after {
+    width: 50%;
+}
+.dropdownMenu li:not(.withOptions):hover,
+a:not(.active):not(.withOptions):hover {
+    color: #f5f5f5;
+}
+.navBar{
+    display: none;
+    z-index: 10;
+}
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+@keyframes slideOut {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100%);
+    }
+}
+.slideIn {
+    animation: slideIn 0.8s ease forwards;
+}
+
+.slideOut {
+    animation: slideOut 0.8s ease forwards;
+}
+@media (max-width: 1270px) {
+    .containerItem {
+        padding-right: 16px;
+        font-size: 11px;
+    }
+}
+@media (max-width: 1135px){
+    .Number {
+        font-size: 15px;
+    }
+    .containerItemMain2{
+        margin-right: 3%;
+    }
+    .containerItemMain img{
+        padding-right: 20px;
+
+    }
+}
+@media (max-width: 1055px){
+    .container{
+        display: none;
+    }
+    .Number {
+        font-size: 18px;
+    }
+    .navBar{
+        justify-content: space-between;
+        margin-bottom: 25px;
+        display: flex;
+        width: 100%;
+
+    }
+    .burger {
+        margin-left: 10px;
+        padding-right: 50px;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        justify-content: space-around;
+        width: 30px;
+        height: 21px;
+        position: relative;
+        z-index: 3;
+    }
+    .burgerLines,
+    .burgerLinesActive {
+        width: 30px;
+        height: 3px;
+        background-color:#FFFFFF;
+        opacity: 0.24;
+        transition: all 0.3s ease;
+    }
+    .burgerLinesActive:nth-child(1) {
+        transform: translateY(7.5px) rotate(45deg);
+        background-color: #888888;
+        opacity: 1;
+    }
+    .burgerLinesActive:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burgerLinesActive:nth-child(3) {
+        transform: translateY(-7.5px) rotate(-45deg);
+        background-color: #888888;
+        opacity: 1;
+    }
+    .TabletMenu {
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        z-index: 2;
+        min-height: 330px;
+        background-color: #262626;
+        padding-left: 0;
+    }
+    .subMenuTable{
+        display: block;
+        position: relative;
+        padding-top: 10px;
+    }
+
+    .withOptions{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .subMenuTable {
+        display:flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .subMenuTableEnter{
+        animation: slideInTable 0.8s ease forwards;
+    }
+    .subMenuTableExit{
+        animation:slideOutTable  0.8s ease forwards;
+    }
+    @keyframes slideInTable {
+        from {
+            transform: translateX(-300px);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+    @keyframes slideOutTable {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-300px);
+        }
+    }
+    .subItemTable {
+        display: inline-flex;
+        position: relative;
+        width:fit-content;
+        padding: 5px;
+        transition: opacity 0.3s ease;
+    }
+    .subItemTable:hover{
+        opacity: 0.8;
+    }
+    a.active::after{
+        top: calc(100% + 5px);
+    }
+
+    .subItemTable:after {
+        content: "";
+        top: calc(100% - 2px);
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        background-color: #F14D35;
+        transition: transform 0.4s;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .subItemTable:hover::after, a.active::after {
+        transform: scaleX(1);
+    }
+    .containerItemTable {
+        display: inline-flex;
+        margin-bottom: 15px;
+        color: #FFF;
+        font-family: Ubuntu;
+        font-size: 14px;
+        font-weight: 500;
+        transition: opacity 0.5s ease;
+        padding-left: 5%;
+        opacity: 0.8;
+        border-bottom: 1px solid whitesmoke;
+        align-items: center;
+        text-align: center;
+    }
+    .containerItemTable:first-child {
+        margin-top: 15px;
+    }
+
+}
+
+

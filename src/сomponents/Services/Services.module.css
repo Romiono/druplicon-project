@@ -1,0 +1,41 @@
+.img {
+    position: relative;
+    width: 81px;
+    height: 81px;
+}
+
+.Adv {
+    position: relative;
+}
+
+.Adv:before {
+    position: absolute;
+    right: 250px;
+    top: 20px;
+    content: url("../../ref/Vector.svg");
+    width: 114px;
+    height: 71px;
+}
+
+.imgAdv{
+    display: flex;
+    justify-content: start;
+    margin-bottom: 20px;
+}
+
+.textAdv{
+    font-size: 16px;
+    text-align: left;
+    /*width: 182px;*/
+}
+
+.title {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 720px) {
+    .Adv:before {
+        right: 120px;
+        top: 20px;
+    }
+}

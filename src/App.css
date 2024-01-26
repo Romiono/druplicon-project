@@ -1,0 +1,30 @@
+.App {
+  overflow: hidden;
+}
+
+p, a {
+  font-family: Montserrat sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Montserrat sans-serif;;
+  font-weight: bold;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+@font-face {
+  src: url("./ref/fonts/Montserrat-Regular.ttf");
+  font-family: Montserrat sans-serif;
+}
+
+@font-face {
+  src: url("./ref/fonts/Montserrat-Bold.ttf");
+  font-family: Montserrat sans-serif;
+  font-weight: bold;
+}
+
+

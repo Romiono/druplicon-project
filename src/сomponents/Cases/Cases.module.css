@@ -1,0 +1,51 @@
+.picture {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.case {
+    position: relative;
+    width: 100%;
+    margin: 20px;
+    height: 475px;
+    overflow: hidden;
+}
+
+.caseContetnt {
+    position: absolute;
+    bottom: 10px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    padding: 20px;
+}
+
+.caseTitle {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.caseText {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.caseDate {
+    font-size: 16px;
+    opacity: 0.5;
+    color: #999999;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 720px){
+    .case {
+        margin: 20px 0;
+    }
+}

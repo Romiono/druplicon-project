@@ -1,0 +1,29 @@
+.portrait {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 720px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .portrait {
+        width: 100%;
+        height: auto;
+    }
+}

@@ -1,0 +1,48 @@
+.menu {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    bottom: 50px;
+    left: 0;
+    transform: translateY(110%);
+    transition: 0.3s;
+    z-index: 9;
+}
+
+.menuActive {
+    position: fixed;
+    width: 100vw;
+    height: 50vh;
+    bottom: 50px;
+    left: 0;
+    transform: translateY(0);
+    transition: 0.3s;
+    z-index: 9;
+}
+
+.menu__content {
+    width: 100%;
+    height: 100%;
+    background-color: #262626;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    transition: 0.3s;
+}
+
+.spisok {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.navItem {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 10px;
+}
+
+.navItemWrapper {
+    width: 100%;
+    border-bottom: 1px solid #F14D34;
+}

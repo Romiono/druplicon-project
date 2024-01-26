@@ -1,0 +1,12 @@
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 52px;
+    font-weight: bold;
+
+}
+
+.cases {
+    margin-top: 50px;
+}

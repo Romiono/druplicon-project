@@ -1,0 +1,43 @@
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+}
+
+
+.navigation {
+    display: inline;
+    margin: 10px;
+    line-height: 2;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+
+.nav {
+    margin: 0;
+}
+
+a {
+    font-size: 12px;
+    text-decoration: none;
+    padding: 0;
+    transition: 0.5s;
+}
+
+.hdNav {
+    background-color: transparent;
+    box-shadow: 0 0 0;
+    height: 10px;
+}
+
+nav ul a {
+    padding: 0;
+}
+
+@media screen and (max-width: 760px) {
+    .wrapper {
+        display: none;
+    }
+}
